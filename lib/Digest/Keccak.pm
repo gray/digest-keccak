@@ -151,7 +151,7 @@ L<Digest>
 
 L<http://keccak.noekeon.org/>
 
-L<http://en.wikimedia.org/wikipedia/en/wiki/SHA-3>
+L<http://en.wikipedia.org/wiki/NIST_hash_function_competition>
 
 L<http://www.saphir2.com/sphlib/>
 
