@@ -1,0 +1,9 @@
+Digest-Keccak-*
+Keccak.bs
+Keccak.c
+Keccak.o
+MANIFEST.bak
+Makefile
+Makefile.old
+blib/
+pm_to_blib
