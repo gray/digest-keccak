@@ -75,8 +75,8 @@ Digest::Keccak - Perl interface to the Keccak digest algorithm
     use Digest::Keccak qw(keccak_256 keccak_256_hex keccak_256_base64);
 
     $digest = keccak_256($data);
-    $digest = keccak_hex_256($data);
-    $digest = keccak_base64_256($data);
+    $digest = keccak_256_hex($data);
+    $digest = keccak_256_base64($data);
 
     # Object-oriented interface
     use Digest::Keccak;
