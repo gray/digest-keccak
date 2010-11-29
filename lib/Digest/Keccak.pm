@@ -25,33 +25,6 @@ our @EXPORT_OK = qw(
     keccak_512 keccak_512_hex keccak_512_base64
 );
 
-# TODO: convert to C.
-sub keccak_224_hex  { unpack 'H*', keccak_224(@_) }
-sub keccak_256_hex  { unpack 'H*', keccak_256(@_) }
-sub keccak_384_hex  { unpack 'H*', keccak_384(@_) }
-sub keccak_512_hex  { unpack 'H*', keccak_512(@_) }
-
-sub keccak_224_base64 {
-    my $b64 = MIME::Base64::encode(keccak_224(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub keccak_256_base64 {
-    my $b64 = MIME::Base64::encode(keccak_256(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub keccak_384_base64 {
-    my $b64 = MIME::Base64::encode(keccak_384(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-sub keccak_512_base64 {
-    my $b64 = MIME::Base64::encode(keccak_512(@_), '');
-    $b64 =~ s/=+$//g;
-    return $b64;
-}
-
 sub add_bits {
     my ($self, $data, $bits) = @_;
     if (2 == @_) {
