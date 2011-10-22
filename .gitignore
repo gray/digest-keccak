@@ -3,6 +3,8 @@ Keccak.bs
 Keccak.c
 Keccak.o
 MANIFEST.bak
+MYMETA.json
+MYMETA.yml
 Makefile
 Makefile.old
 blib/
